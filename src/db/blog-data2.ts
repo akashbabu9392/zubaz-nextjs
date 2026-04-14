@@ -1,0 +1,44 @@
+const blog_data_2 =[
+	{
+		id: 1,
+		image: "/assets/images/blog/blog1.png",
+		category: "Business",
+		date: "June 18, 2024",
+		title: "Meeting the financial needs of the new gen",
+		description:
+			"We’ve been embracing information technology (IT) in various facets…",
+		" link": "single-blog",
+	},
+	{
+		id: 2,
+		image: "/assets/images/blog/blog2.png",
+		category: "Technology",
+		date: "June 18, 2024",
+		title: "5 SaaS best ideas you can tailor to your needs easily",
+		description:
+			"In the rapidly evolving technology data scientists with an entrepreneur...",
+		" link": "single-blog",
+	},
+	{
+		id: 3,
+		image: "/assets/images/blog/blog3.png",
+		category: "Finance",
+		date: "June 18, 2024",
+		title: "How to develop a simple SaaS banking platform?",
+		description:
+			"The financial sector is going through a substantial shift in today’s fast...",
+		" link": "single-blog",
+	},
+	{
+		id: 4,
+		image: "/assets/images/blog/blog.png",
+		category: "Marketing",
+		date: "June 18, 2024",
+		title: "Smart content marketing strategy for your SaaS",
+		description:
+			"If you have developed a SaaS and you are ready to roll in the market...",
+		link: "single-blog",
+	},
+];
+
+export default blog_data_2
