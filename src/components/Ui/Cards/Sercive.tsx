@@ -1,8 +1,13 @@
 import { Link } from "../../common/link";
 
- 
+type SerciveCardProps = {
+  title: string;
+  description: string;
+  icon: string;
+  link: string;
+};
 
-const SerciveCard = ({ title, description, icon, link }: any) => {
+const SerciveCard = ({ title, description, icon, link }: SerciveCardProps) => {
   return (
     <div className="col-xl-4 col-md-6">
       <div className="zubuz-iconbox-wrap-left iconbox-left-border">

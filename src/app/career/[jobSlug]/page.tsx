@@ -10,7 +10,7 @@ type Props = {
 
 export default function Page({ params }: Props) {
   const exists = careerData.some(
-    (j: any) => slugify(String(j?.title ?? "")) === params.jobSlug,
+    (j) => slugify(String(j.title ?? "")) === params.jobSlug,
   );
   if (!exists) return notFound();
 

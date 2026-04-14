@@ -22,7 +22,8 @@ const PortfolioClassic = () => {
   const [filterKey, setFilterKey] = useState<string>("*");
 
   useEffect(() => {
-    let iso: Isotope;
+    let iso: Isotope | null = null;
+    const current = isotopeRef.current;
 
     import("isotope-layout").then((IsotopeModule) => {
       if (containerRef.current) {
@@ -31,14 +32,14 @@ const PortfolioClassic = () => {
           layoutMode: "fitRows",
         });
 
-        isotopeRef.current.isoInstance = iso;
+        current.isoInstance = iso;
       }
     });
 
     // Cleanup
     return () => {
-      if (isotopeRef.current.isoInstance) {
-        isotopeRef.current.isoInstance.destroy();
+      if (iso) {
+        iso.destroy();
       }
     };
   }, []);
@@ -91,9 +92,9 @@ const PortfolioClassic = () => {
                     <path
                       d="M29 1.5L46.5 19M46.5 19L29 36.5M46.5 19L1.5 19"
                       stroke="white"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </Link>
@@ -121,9 +122,9 @@ const PortfolioClassic = () => {
                     <path
                       d="M29 1.5L46.5 19M46.5 19L29 36.5M46.5 19L1.5 19"
                       stroke="white"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </Link>
@@ -151,9 +152,9 @@ const PortfolioClassic = () => {
                     <path
                       d="M29 1.5L46.5 19M46.5 19L29 36.5M46.5 19L1.5 19"
                       stroke="white"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </Link>
@@ -181,9 +182,9 @@ const PortfolioClassic = () => {
                     <path
                       d="M29 1.5L46.5 19M46.5 19L29 36.5M46.5 19L1.5 19"
                       stroke="white"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </Link>

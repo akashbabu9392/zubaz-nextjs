@@ -3,8 +3,11 @@
 import { useEffect } from "react";
 import BackToTop from "./BackToTop";
 
+type WrapperProps = {
+  children: React.ReactNode;
+};
 
-const Wrapper = ({ children }: any) => {
+const Wrapper = ({ children }: WrapperProps) => {
 
   useEffect(() => {
     if (typeof window === "undefined") return;

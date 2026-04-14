@@ -1,6 +1,18 @@
-/* eslint-disable react/no-unescaped-entities */
+type TestimonialCardProps = {
+  title: string;
+  description: string;
+  avatar: string;
+  name: string;
+  role: string;
+};
 
-const TestimonialCard = ({ title, description, avatar, name, role }: any) => {
+const TestimonialCard = ({
+  title,
+  description,
+  avatar,
+  name,
+  role,
+}: TestimonialCardProps) => {
   return (
     <div className="col-lg-6">
       <div className="zubuz-testimonial-wrap">

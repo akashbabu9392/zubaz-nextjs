@@ -1,8 +1,11 @@
 import { Link } from "../../../common/link";
 
- 
+type CtaThreeProps = {
+  title: string;
+  btnText: string;
+};
 
-const CtaThree = ({ title, btnText }: any) => {
+const CtaThree = ({ title, btnText }: CtaThreeProps) => {
   return (
     <div className="section zubuz-section-padding dark-bg">
       <div className="container">

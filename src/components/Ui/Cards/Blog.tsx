@@ -2,7 +2,15 @@
 import { Link } from "../../common/link";
 import ArrowRightIcon from "../Icon/ArrowRight";
 
-const BlogCard = ({title, category, image, date, link} : any) => {
+type BlogCardProps = {
+  title: string;
+  category: string;
+  image: string;
+  date: string;
+  link: string;
+};
+
+const BlogCard = ({ title, category, image, date, link }: BlogCardProps) => {
   return (
     <div className="col-xl-4 col-lg-6">
       <div className="zubuz-blog-wrap">

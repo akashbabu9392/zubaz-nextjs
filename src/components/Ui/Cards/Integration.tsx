@@ -1,8 +1,20 @@
 import { Link } from "../../common/link";
 
- 
+type IntegrationCardProps = {
+  icon: string;
+  name: string;
+  category: string;
+  description: string;
+  link: string;
+};
 
-const IntegrationCard = ({ icon, name, category, description }: any) => {
+const IntegrationCard = ({
+  icon,
+  name,
+  category,
+  description,
+  link,
+}: IntegrationCardProps) => {
   return (
     <div className="col-xl-4 col-md-6">
       <div className="zubuz-iconbox-wrap-left d-block iconbox-left-border">
@@ -17,7 +29,7 @@ const IntegrationCard = ({ icon, name, category, description }: any) => {
         </div>
         <div className="zubuz-iconbox-data">
           <p>{description}</p>
-          <Link className="zubuz-iconbox-btn" to="">
+          <Link className="zubuz-iconbox-btn" to={link}>
             <span>Read more</span>
             <img src="/assets/images/icon/arrow-right2.svg" alt="" />
           </Link>

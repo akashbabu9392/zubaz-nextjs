@@ -1,8 +1,18 @@
 import { Link } from "../../common/link";
 
- 
+type CareerJob = {
+  title: string;
+  description: string;
+  location: string;
+  type: string;
+  salary: string;
+};
 
-const CareerCard = ({ job }: any) => {
+type CareerCardProps = {
+  job: CareerJob;
+};
+
+const CareerCard = ({ job }: CareerCardProps) => {
   return (
     <div className="zubuz-jobs-item">
       <div className="zubuz-jobs-item-content">

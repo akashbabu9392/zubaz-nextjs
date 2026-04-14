@@ -1,6 +1,14 @@
 "use client";
 
-const PortfolioFilterNav = ({ filterKey, handleFilterKeyChange }: any) => {
+type PortfolioFilterNavProps = {
+  filterKey: string;
+  handleFilterKeyChange: (key: string) => () => void;
+};
+
+const PortfolioFilterNav = ({
+  filterKey,
+  handleFilterKeyChange,
+}: PortfolioFilterNavProps) => {
   return (
     <div className="zubuz-portfolio-menu">
       <ul

@@ -2,25 +2,38 @@
 import { Link } from "../../common/link";
 import ArrowRightIcon from "../Icon/ArrowRight"; 
 
-const BlogCard = ({ post }: any) => {
+type BlogPost = {
+  image: string;
+  category: string;
+  date: string;
+  title: string;
+  description: string;
+  link: string;
+};
+
+type BlogCardProps = {
+  post: BlogPost;
+};
+
+const BlogCard = ({ post }: BlogCardProps) => {
   return (
     <div>
       <div className="single-post-item">
         <div className="post-thumbnail">
-          <img src={post?.image} alt="" />
+          <img src={post.image} alt="" />
         </div>
         <div className="post-content">
           <div className="post-meta">
             <div className="post-category">
-              <Link to="">{post?.category}</Link>
+              <Link to="">{post.category}</Link>
             </div>
-            <div className="post-date">{post?.date}</div>
+            <div className="post-date">{post.date}</div>
           </div>
-          <Link to={post?.link}>
-            <h3 className="entry-title">{post?.title}</h3>
+          <Link to={post.link}>
+            <h3 className="entry-title">{post.title}</h3>
           </Link>
-          <p>{post?.description}</p>
-          <Link className="post-read-more" to={post?.link}>
+          <p>{post.description}</p>
+          <Link className="post-read-more" to={post.link}>
             <ArrowRightIcon />
           </Link>
         </div>

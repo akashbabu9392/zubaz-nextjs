@@ -9,7 +9,7 @@ type Props = {
 
 export default function Page({ params }: Props) {
   const id = Number(params.blogId);
-  const exists = blogs.some((b: any) => b?.id === id);
+  const exists = blogs.some((b) => b.id === id);
   if (!exists) return notFound();
 
   return <SingleBlog />;

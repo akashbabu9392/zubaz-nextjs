@@ -7,7 +7,7 @@ const blog_data_2 =[
 		title: "Meeting the financial needs of the new gen",
 		description:
 			"We’ve been embracing information technology (IT) in various facets…",
-		" link": "single-blog",
+		link: "single-blog",
 	},
 	{
 		id: 2,
@@ -17,7 +17,7 @@ const blog_data_2 =[
 		title: "5 SaaS best ideas you can tailor to your needs easily",
 		description:
 			"In the rapidly evolving technology data scientists with an entrepreneur...",
-		" link": "single-blog",
+		link: "single-blog",
 	},
 	{
 		id: 3,
@@ -27,7 +27,7 @@ const blog_data_2 =[
 		title: "How to develop a simple SaaS banking platform?",
 		description:
 			"The financial sector is going through a substantial shift in today’s fast...",
-		" link": "single-blog",
+		link: "single-blog",
 	},
 	{
 		id: 4,

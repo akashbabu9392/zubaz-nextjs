@@ -1,4 +1,14 @@
-const FeatureCardThree = ({ feature }: any) => {
+type Feature = {
+  icon: string;
+  title: string;
+  description: string;
+};
+
+type FeatureCardThreeProps = {
+  feature: Feature;
+};
+
+const FeatureCardThree = ({ feature }: FeatureCardThreeProps) => {
     return (
         <div className="col-xl-4 col-md-6">
         <div className="zubuz-iconbox-wrap-left iconbox-left-border">

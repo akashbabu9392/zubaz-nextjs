@@ -10,7 +10,7 @@ type Props = {
 
 export default function Page({ params }: Props) {
   const exists = teamData.some(
-    (m: any) => slugify(String(m?.name ?? "")) === params.memberSlug,
+    (m) => slugify(String(m.name ?? "")) === params.memberSlug,
   );
   if (!exists) return notFound();
 

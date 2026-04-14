@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-
 const SingleCareerSection = () => {
   return (
     <div className="section zubuz-section-padding2">

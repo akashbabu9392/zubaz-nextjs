@@ -14,7 +14,7 @@ import StateSection from "../Section/Home-3/State/State";
 const HomeThree = () => {
   return (
     <Wrapper>
-      <HomeHeader roundedBtn = "true" />
+      <HomeHeader roundedBtn />
       <HeroSection />
       <ServiceSection />
       <ContentSection />

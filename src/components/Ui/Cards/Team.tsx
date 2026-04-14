@@ -1,6 +1,22 @@
 import { FaFacebookF, FaLinkedin, FaTwitter } from "react-icons/fa";
 
-const TeamCard = ({ name, role, image, twitter, facebook, linkedin } : any) => {
+type TeamCardProps = {
+  name: string;
+  role: string;
+  image: string;
+  twitter: string;
+  facebook: string;
+  linkedin: string;
+};
+
+const TeamCard = ({
+  name,
+  role,
+  image,
+  twitter,
+  facebook,
+  linkedin,
+}: TeamCardProps) => {
   return (
     <div className="col-xl-4 col-md-6">
       <div className="zubuz-team-wrap">

@@ -128,7 +128,7 @@ const Header = () => {
 
   return (
     <header
-      className="site-header site-header--menu-center zubuz-header-section dark-bg white-menu"
+      className={`site-header site-header--menu-center zubuz-header-section dark-bg white-menu ${scrollClassName}`}
       id="sticky-menu"
     >
       <div className="container">

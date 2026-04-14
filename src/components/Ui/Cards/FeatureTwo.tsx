@@ -1,4 +1,16 @@
-const FeatureCardTwo = ({ title, description, image, icon } : any) => {
+type FeatureCardTwoProps = {
+  title: string;
+  description: string;
+  image: string;
+  icon: string;
+};
+
+const FeatureCardTwo = ({
+  title,
+  description,
+  image,
+  icon,
+}: FeatureCardTwoProps) => {
   return (
     <div className="zubuz-iconbox-wrap2">
       <div className="zubuz-iconbox-icon">

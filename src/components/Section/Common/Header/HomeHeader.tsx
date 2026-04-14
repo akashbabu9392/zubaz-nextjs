@@ -6,7 +6,12 @@ import { FaAngleDown, FaAngleLeft } from "react-icons/fa";
 import { Link } from "../../../common/link";
 import BrandLogo from "../../../Ui/Logo/BrandLogo";
 
-const HomeHeader = ({ logoSrc, roundedBtn }: any) => {
+type HomeHeaderProps = {
+  logoSrc?: string;
+  roundedBtn?: boolean;
+};
+
+const HomeHeader = ({ logoSrc, roundedBtn }: HomeHeaderProps) => {
  
  
   const [isActive, setIsActive] = useState<boolean>(false);

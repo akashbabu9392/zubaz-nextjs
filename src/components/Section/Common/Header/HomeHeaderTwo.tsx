@@ -6,7 +6,11 @@ import { FaAngleDown, FaAngleLeft } from "react-icons/fa";
 import BrandLogo from "../../../Ui/Logo/BrandLogo";
 import { Link } from "../../../common/link";
 
-const HomeHeaderTwo = ({ logoSrc } : any) => {
+type HomeHeaderTwoProps = {
+  logoSrc?: string;
+};
+
+const HomeHeaderTwo = ({ logoSrc }: HomeHeaderTwoProps) => {
   
 
   

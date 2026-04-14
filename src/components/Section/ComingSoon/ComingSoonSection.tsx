@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const ComingSoonSection = () => {
-  const [partyTime, setPartyTime] = useState(false);
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -33,10 +32,6 @@ const ComingSoonSection = () => {
 
       const s = Math.floor((difference % (1000 * 60)) / 1000);
       setSeconds(s);
-
-      if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
-        setPartyTime(true);
-      }
     }, 1000);
 
     return () => clearInterval(interval);

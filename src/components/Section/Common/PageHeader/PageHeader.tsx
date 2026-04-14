@@ -1,6 +1,10 @@
 import { Link } from "../../../common/link";
 
-const PageHeader = ({ title } : any) => {
+type PageHeaderProps = {
+  title: string;
+};
+
+const PageHeader = ({ title }: PageHeaderProps) => {
   return (
     <div className="zubuz-breadcrumb">
       <div className="container">

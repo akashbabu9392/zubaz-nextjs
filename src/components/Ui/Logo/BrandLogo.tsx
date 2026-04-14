@@ -1,7 +1,11 @@
 import { Link } from "../../common/link";
 
  
-const BrandLogo = ({ imageSrc } : any) => {
+type BrandLogoProps = {
+  imageSrc?: string;
+};
+
+const BrandLogo = ({ imageSrc }: BrandLogoProps) => {
   const defaultImageSrc = "/assets/images/logo/logo-dark.svg";
   const logoSrc = imageSrc || defaultImageSrc;
 
